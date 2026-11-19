@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="220" rx="14" fill="url(#bgGrad)" />
+  <!-- Subtle ML / data-pipeline node motif on the right -->
+  <g opacity="0.28" stroke="#38bdf8" stroke-width="1.5" fill="none">
+    <line x1="650" y1="60" x2="730" y2="95" />
+    <line x1="650" y1="110" x2="730" y2="95" />
+    <line x1="650" y1="160" x2="730" y2="135" />
+    <line x1="650" y1="110" x2="730" y2="135" />
+    <line x1="730" y1="95" x2="820" y2="115" />
+    <line x1="730" y1="135" x2="820" y2="115" />
+  </g>
+  <g fill="#38bdf8" opacity="0.75">
+    <circle cx="650" cy="60" r="6" />
+    <circle cx="650" cy="110" r="6" />
+    <circle cx="650" cy="160" r="6" />
+    <circle cx="730" cy="95" r="7" fill="#818cf8" />
+    <circle cx="730" cy="135" r="7" fill="#818cf8" />
+    <circle cx="820" cy="115" r="9" fill="#34d399" />
+  </g>
+  <text x="48" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="800" fill="url(#titleGrad)">Vaishnavi Lolla</text>
+  <text x="48" y="124" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#e2e8f0">Data Scientist | Applied ML, GenAI Systems &amp; Production MLOps</text>
+  <text x="48" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8">Building measurable predictive systems, scalable data pipelines, and reliable AI workflows.</text>
+</svg>
