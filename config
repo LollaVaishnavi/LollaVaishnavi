@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	name = Vaishnavi Lolla
+	email = Vaishnavilolla@mycvcareer.com
+[remote "origin"]
+	url = https://github.com/LollaVaishnavi/LollaVaishnavi
+	fetch = +refs/heads/*:refs/remotes/origin/*

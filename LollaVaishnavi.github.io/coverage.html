@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaishnavi Lolla | Resume Coverage Map</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 0; line-height: 1.55; }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 36px 24px 64px; }
+    .hero { background: #0f172a; color: #f8fafc; padding: 36px 32px; border-radius: 14px; margin-bottom: 28px; }
+    .hero h1 { margin: 0 0 8px 0; font-size: 32px; color: #38bdf8; }
+    .hero p { margin: 0 0 16px 0; color: #cbd5e1; max-width: 760px; }
+    .nav a { color: #38bdf8; margin-right: 18px; text-decoration: none; font-weight: 600; font-size: 14px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    .stat-pill { background: #1e293b; border: 1px solid #334155; padding: 6px 12px; border-radius: 8px; font-size: 13px; color: #e2e8f0; }
+    .card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 22px 24px; margin-bottom: 20px; }
+    .card-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+    .card h2 { margin: 0; font-size: 21px; }
+    .card h2 a { color: #1d4ed8; text-decoration: none; }
+    .shape-tag { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+    .impossibility { border-left: 4px solid #991b1b; background: #fef2f2; padding: 10px 14px; margin: 14px 0; border-radius: 0 8px 8px 0; font-size: 14px; color: #7f1d1d; }
+    ul { margin: 10px 0 14px 20px; padding: 0; }
+    li { margin-bottom: 6px; font-size: 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { background: #f1f5f9; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; color: #334155; }
+    table { width: 100%; border-collapse: collapse; background: #ffffff; margin: 16px 0; font-size: 13px; }
+    th { background: #f1f5f9; text-align: left; padding: 9px 10px; border: 1px solid #cbd5e1; }
+    td { padding: 9px 10px; border: 1px solid #cbd5e1; vertical-align: top; }
+    .footer { margin-top: 32px; font-size: 13px; color: #475569; border-top: 1px solid #cbd5e1; padding-top: 14px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Resume-to-Portfolio Coverage Map</h1>
+    <p>Every claim below maps to deterministic offline code that a reviewer can verify with <code>make verify</code>.</p>
+    <div class="nav">
+      <a href="index.html">Back to Case Studies</a>
+      <a href="https://github.com/LollaVaishnavi">GitHub (@LollaVaishnavi)</a>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>1. Resume Claims to Repositories</h2>
+    <table>
+      <thead><tr><th>Repository</th><th>Resume Claims Evidenced</th><th>Orphan / Gap Skills Closed</th></tr></thead>
+      <tbody><tr><td><a href="https://github.com/LollaVaishnavi/forecast-cost-audit">forecast-cost-audit</a></td><td>Demand forecasting models (Amazon); SQL feature engineering and warehouse modeling (Amazon, Google); XGBoost / GBDT tabular modeling (Amazon, Google); Model evaluation workflows (Google)</td><td>SHAP (academic-only); Unmeasured Amazon demand forecasting claim</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/prompt-eval-power">prompt-eval-power</a></td><td>RAG-based GenAI POCs using LangChain, LangGraph, and Pinecone (Amazon); Hypothesis testing and statistical rigor (Google)</td><td>Prompt Engineering (strict orphan); POC-only RAG / LangGraph / Pinecone evaluation gap</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/late-event-feature-audit">late-event-feature-audit</a></td><td>Distributed data transformation and feature engineering (Amazon, Google); Classification modeling and risk analysis (Google)</td><td>Microsoft Azure (strict orphan); Google Cloud Storage (strict orphan); Apache Kafka (academic-only); Spark Streaming (academic-only)</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/delayed-label-drift-gate">delayed-label-drift-gate</a></td><td>ML model deployment and monitoring using MLflow, Docker, and FastAPI (Amazon); Anomaly detection and statistical monitoring (Google)</td><td>SHAP (academic-only); Unmeasured production model monitoring and drift detection claims</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>2. Orphan and Under-Evidenced Skills Closed</h2>
+    <table>
+      <thead><tr><th>Orphan / Gap Skill</th><th>Repository</th><th>Headline Verified Measurement</th></tr></thead>
+      <tbody><tr><td>SHAP (academic-only); Unmeasured Amazon demand forecasting claim</td><td><a href="https://github.com/LollaVaishnavi/forecast-cost-audit">forecast-cost-audit</a></td><td>MSE achieves 23.2% lower RMSE yet incurs 41.5% higher inventory cost ($17,899.24 extra) at 5:1 asymmetry</td></tr><tr><td>Prompt Engineering (strict orphan); POC-only RAG / LangGraph / Pinecone evaluation gap</td><td><a href="https://github.com/LollaVaishnavi/prompt-eval-power">prompt-eval-power</a></td><td>A 30-query prompt suite has a 75.2% false-pass rate on a 10pp drop and a 28.7pp MDE at 80% power</td></tr><tr><td>Microsoft Azure (strict orphan); Google Cloud Storage (strict orphan); Apache Kafka (academic-only); Spark Streaming (academic-only)</td><td><a href="https://github.com/LollaVaishnavi/late-event-feature-audit">late-event-feature-audit</a></td><td>2-hour p95 arrival lag corrupts 7.4% of training rows and inflates offline ROC-AUC by 4.7 points (8.4 points at 12h lag)</td></tr><tr><td>SHAP (academic-only); Unmeasured production model monitoring and drift detection claims</td><td><a href="https://github.com/LollaVaishnavi/delayed-label-drift-gate">delayed-label-drift-gate</a></td><td>Waiting 30 days for labels leaks 2614 escaped bad decisions ($65,350); even day +3 SHAP-shift lets 280 bad decisions escape</td></tr></tbody>
+    </table>
+  </section>
+</div>
+</body>
+</html>

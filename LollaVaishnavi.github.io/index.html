@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaishnavi Lolla | Technical Case Studies</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 0; line-height: 1.55; }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 36px 24px 64px; }
+    .hero { background: #0f172a; color: #f8fafc; padding: 36px 32px; border-radius: 14px; margin-bottom: 28px; }
+    .hero h1 { margin: 0 0 8px 0; font-size: 32px; color: #38bdf8; }
+    .hero p { margin: 0 0 16px 0; color: #cbd5e1; max-width: 760px; }
+    .nav a { color: #38bdf8; margin-right: 18px; text-decoration: none; font-weight: 600; font-size: 14px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    .stat-pill { background: #1e293b; border: 1px solid #334155; padding: 6px 12px; border-radius: 8px; font-size: 13px; color: #e2e8f0; }
+    .card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 22px 24px; margin-bottom: 20px; }
+    .card-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+    .card h2 { margin: 0; font-size: 21px; }
+    .card h2 a { color: #1d4ed8; text-decoration: none; }
+    .shape-tag { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+    .impossibility { border-left: 4px solid #991b1b; background: #fef2f2; padding: 10px 14px; margin: 14px 0; border-radius: 0 8px 8px 0; font-size: 14px; color: #7f1d1d; }
+    ul { margin: 10px 0 14px 20px; padding: 0; }
+    li { margin-bottom: 6px; font-size: 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { background: #f1f5f9; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; color: #334155; }
+    table { width: 100%; border-collapse: collapse; background: #ffffff; margin: 16px 0; font-size: 13px; }
+    th { background: #f1f5f9; text-align: left; padding: 9px 10px; border: 1px solid #cbd5e1; }
+    td { padding: 9px 10px; border: 1px solid #cbd5e1; vertical-align: top; }
+    .footer { margin-top: 32px; font-size: 13px; color: #475569; border-top: 1px solid #cbd5e1; padding-top: 14px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Vaishnavi Lolla</h1>
+    <p>Data Scientist | Applied ML, GenAI Evaluation, Streaming Features &amp; MLOps. Four offline, deterministic technical case studies built around structural impossibilities and machine-checked receipts.</p>
+    <div class="nav">
+      <a href="index.html">Case Studies</a>
+      <a href="coverage.html">Resume Coverage Map</a>
+      <a href="https://github.com/LollaVaishnavi">GitHub (@LollaVaishnavi)</a>
+      <a href="https://www.linkedin.com/in/vaishnavi-lolla-1381141a3/">LinkedIn</a>
+    </div>
+    <div class="stats">
+      <span class="stat-pill">4 Repositories</span>
+      <span class="stat-pill">297 Property Tests</span>
+      <span class="stat-pill">20 ADRs</span>
+      <span class="stat-pill">16 Reproducible Experiments</span>
+      <span class="stat-pill">100% Offline make verify</span>
+    </div>
+  </header>
+
+  
+            <article class="card">
+              <div class="card-head">
+                <h2><a href="https://github.com/LollaVaishnavi/forecast-cost-audit">forecast-cost-audit</a></h2>
+                <span class="shape-tag">Impossibility: Aggregation</span>
+              </div>
+              <p style="margin:6px 0 0 0;color:#475569;font-size:14px;">Asymmetric newsvendor cost auditing and exact Cost-SHAP for demand forecasting</p>
+              <div class="impossibility"><strong>Structural Impossibility:</strong> A symmetric forecast error metric (MAPE or RMSE) collapses under-forecasting and over-forecasting into one scalar, so it cannot tell whether a lower-error model increases stockout and holding cost.</div>
+              <ul><li>MSE achieves 23.2% lower RMSE yet incurs 41.5% higher inventory cost ($17,899.24 extra) at 5:1 asymmetry</li><li>Fixed portfolio q=0.833 loses at 3 of 9 cost ratios (46.3% more than MSE at 1:1) and loses +9.0% on 7 of 12 low-margin staples</li><li>Exact 32-coalition Cost-SHAP shows 3 feature groups save real stockout dollars while hurting symmetric RMSE</li></ul>
+              <div class="chips">
+                <span class="chip">77 tests</span>
+                <span class="chip">98.8% coverage (90%+ floor)</span>
+                <span class="chip">5 ADRs</span>
+                <span class="chip">4 experiments</span>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-head">
+                <h2><a href="https://github.com/LollaVaishnavi/prompt-eval-power">prompt-eval-power</a></h2>
+                <span class="shape-tag">Impossibility: Resolution</span>
+              </div>
+              <p style="margin:6px 0 0 0;color:#475569;font-size:14px;">Statistical regression gate and power analyzer for RAG and LangGraph prompt suites</p>
+              <div class="impossibility"><strong>Structural Impossibility:</strong> A pass-rate threshold on a small prompt evaluation set cannot separate a real prompt regression from binomial sampling noise, so a CI gate either ships broken prompts or blocks harmless edits.</div>
+              <ul><li>A 30-query prompt suite has a 75.2% false-pass rate on a 10pp drop and a 28.7pp MDE at 80% power</li><li>0/30 failures still leaves a 9.5% true failure upper bound (95% Clopper-Pearson); &lt;1% requires 299 zero-failure queries</li><li>On 300 labeled queries, n=30 exits 3 (UNDERPOWERED, deficit of 216 queries) where n=300 catches 29 pass-to-fail flips</li></ul>
+              <div class="chips">
+                <span class="chip">74 tests</span>
+                <span class="chip">99.1% coverage (90%+ floor)</span>
+                <span class="chip">5 ADRs</span>
+                <span class="chip">4 experiments</span>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-head">
+                <h2><a href="https://github.com/LollaVaishnavi/late-event-feature-audit">late-event-feature-audit</a></h2>
+                <span class="shape-tag">Impossibility: Missing Edge</span>
+              </div>
+              <p style="margin:6px 0 0 0;color:#475569;font-size:14px;">Bitemporal point-in-time leakage replay across Kafka, Spark Streaming, S3, GCS, and Azure</p>
+              <div class="impossibility"><strong>Structural Impossibility:</strong> A batch warehouse query over current table state has no edge recording when late-arriving streaming events actually landed, so offline training features silently leak future information that online serving never had at prediction time.</div>
+              <ul><li>2-hour p95 arrival lag corrupts 7.4% of training rows and inflates offline ROC-AUC by 4.7 points (8.4 points at 12h lag)</li><li>A tight 15-minute Spark Streaming watermark drops 59.4% of late events (804 of 1353 evicted)</li><li>Unified manifest adapter proves byte-identical SHA-256 parity across 3 cloud providers (s3://, gs://, az://)</li></ul>
+              <div class="chips">
+                <span class="chip">74 tests</span>
+                <span class="chip">99.2% coverage (90%+ floor)</span>
+                <span class="chip">5 ADRs</span>
+                <span class="chip">4 experiments</span>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-head">
+                <h2><a href="https://github.com/LollaVaishnavi/delayed-label-drift-gate">delayed-label-drift-gate</a></h2>
+                <span class="shape-tag">Impossibility: Irreversibility</span>
+              </div>
+              <p style="margin:6px 0 0 0;color:#475569;font-size:14px;">Irreversible escaped-decision exposure monitoring with PSI, KS, SHAP-shift, FastAPI, Docker, and MLflow</p>
+              <div class="impossibility"><strong>Structural Impossibility:</strong> Predictions served before ground-truth labels arrive cannot be recalled, so a production monitor can only bound how many bad decisions escape during the label-delay window, never prevent them retroactively.</div>
+              <ul><li>Waiting 30 days for labels leaks 2614 escaped bad decisions ($65,350); even day +3 SHAP-shift lets 280 bad decisions escape</li><li>Under pure concept drift (stationary P(X)), PSI, KS, and SHAP-shift miss all 6995 bad decisions ($174,875)</li><li>Noise-only drift triggers a 100.0% false-alarm rate on PSI and KS; exact SHAP-shift attributes 56.1% of drift to order_velocity</li></ul>
+              <div class="chips">
+                <span class="chip">72 tests</span>
+                <span class="chip">96.5% coverage (90%+ floor)</span>
+                <span class="chip">5 ADRs</span>
+                <span class="chip">4 experiments</span>
+              </div>
+            </article>
+            
+
+  <section class="card">
+    <h2>Resume-to-Evidence Coverage Summary</h2>
+    <table>
+      <thead><tr><th>Repository</th><th>Resume Claims Evidenced</th><th>Orphan / Gap Skills Closed</th></tr></thead>
+      <tbody><tr><td><a href="https://github.com/LollaVaishnavi/forecast-cost-audit">forecast-cost-audit</a></td><td>Demand forecasting models (Amazon); SQL feature engineering and warehouse modeling (Amazon, Google); XGBoost / GBDT tabular modeling (Amazon, Google); Model evaluation workflows (Google)</td><td>SHAP (academic-only); Unmeasured Amazon demand forecasting claim</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/prompt-eval-power">prompt-eval-power</a></td><td>RAG-based GenAI POCs using LangChain, LangGraph, and Pinecone (Amazon); Hypothesis testing and statistical rigor (Google)</td><td>Prompt Engineering (strict orphan); POC-only RAG / LangGraph / Pinecone evaluation gap</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/late-event-feature-audit">late-event-feature-audit</a></td><td>Distributed data transformation and feature engineering (Amazon, Google); Classification modeling and risk analysis (Google)</td><td>Microsoft Azure (strict orphan); Google Cloud Storage (strict orphan); Apache Kafka (academic-only); Spark Streaming (academic-only)</td></tr><tr><td><a href="https://github.com/LollaVaishnavi/delayed-label-drift-gate">delayed-label-drift-gate</a></td><td>ML model deployment and monitoring using MLflow, Docker, and FastAPI (Amazon); Anomaly detection and statistical monitoring (Google)</td><td>SHAP (academic-only); Unmeasured production model monitoring and drift detection claims</td></tr></tbody>
+    </table>
+    <p style="font-size:14px;margin-bottom:0;">Shared discipline: every repository runs offline with zero API keys, pins real bugs in tests, publishes uncomfortable failure modes on screen one, and enforces prose-to-code number checks in CI. <a href="coverage.html">Read the full coverage map</a>.</p>
+  </section>
+
+  <footer class="footer">
+    Contact: <a href="mailto:Vaishnavilolla@mycvcareer.com">Vaishnavilolla@mycvcareer.com</a> | GitHub: <a href="https://github.com/LollaVaishnavi">github.com/LollaVaishnavi</a>
+  </footer>
+</div>
+</body>
+</html>
